@@ -9,8 +9,8 @@ def create_blank_image():
 
 def make_report_image(stat, with_frame=False):
     image_obj = create_blank_image()
-    font_low = ImageFont.truetype("/src/Roboto-Medium.ttf", 20, encoding="unic")
-    font_high = ImageFont.truetype("/src/OpenSans-Light.ttf", 35, encoding="unic")
+    font_low = ImageFont.truetype("/fonts/Roboto-Medium.ttf", 20, encoding="unic")
+    font_high = ImageFont.truetype("/fonts/OpenSans-Light.ttf", 35, encoding="unic")
     draw = ImageDraw.Draw(image_obj)
 
     for i, stat_el in enumerate(stat):
