@@ -29,4 +29,4 @@ def make_report_image(stat, with_frame=False):
 
 
 def save_image(image_obj, name):
-    image_obj.save('{}.png'.format(name))
+    image_obj.save('static/{}.png'.format(name))
