@@ -7,7 +7,7 @@ app = Flask(__name__, static_url_path='/static')
 
 def generate(username, period):
     top_artists = trackgetter.get_top_artist(username, period)
-    image_report = imagemaker.make_report_image(top_artists)
+    image_report = imagemaker.make_report_image(top_artists, with_frame=True)
     imagemaker.save_image(image_report, 'image_report')
 
 
@@ -18,7 +18,7 @@ def index():
 
 @app.route('/g')
 def gen():
-    generate('ph1l74', '7day')
+    generate('ph1l74', '12month')
     return '<html><body>generated</body></html>'
 
 
