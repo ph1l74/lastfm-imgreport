@@ -18,7 +18,7 @@ def index():
 
 @app.route('/g')
 def gen():
-    generate('ph1l74', '12month')
+    generate('ph1l74', '7day')
     return '<html><body>generated</body></html>'
 
 
